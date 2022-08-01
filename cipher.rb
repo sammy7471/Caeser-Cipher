@@ -23,4 +23,4 @@ def caeser_cipher(string, key)
     puts new_string
 end
 
-caeser_cipher("What a string!", 5)
+caeser_cipher("What a string!", 30)
