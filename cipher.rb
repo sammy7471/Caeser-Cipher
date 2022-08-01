@@ -1,7 +1,7 @@
 def caeser_cipher(string, key)
     letters = ("a".."z").to_a
-    c_Letters = ("A".."Z").to_a
-    new_String = ""
+    c_letters = ("A".."Z").to_a
+    new_string = ""
     string = string.downcase 
 
     string.each_char do |x|
@@ -10,10 +10,12 @@ def caeser_cipher(string, key)
         if number > 26
           number = number % 26
         end
-        new_String += letters[number]
+        new_string += letters[number]
+      else 
+        new_string += x
       end
     end
-    puts new_String
+    puts new_string
 end
 
 caeser_cipher("What a string!", 5)
